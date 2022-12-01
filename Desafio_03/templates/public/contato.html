@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+Unes | Home
+
+{% endblock %}
+
+{% block content %}
+
+    <tr>
+        <td colspan="2">
+            <h2>Entre em Contato</h2>
+            <p align="justify">
+                Lorem dolor sit amet, consectetur adipiscing elit. Nunc sodales sed nibh eget vehicula.
+            </p>
+
+            <hr>
+
+            <form action="/contato" method="post">
+
+                Seu e-mail: <br>
+                <input type="text" name="email"><br>
+
+                Assunto: <br>
+                <input type="text" name="assunto"><br>
+
+                Descrição: <br>
+                <textarea name="descricao" id="" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="enviar"><br>
+
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <h4>Todos os direitos reservados!</h4>
+
+        </td>
+    </tr>
+
+
+{% endblock %}
